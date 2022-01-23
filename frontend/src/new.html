@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>New user</title>
+  </head>
+  <body>
+    <nav class="nav-wrapper blue darken-4">
+      <a href="#" data-target="mobile-sidenav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <a href="#" class="brand-logo">Bryan Sanchez - Frontend</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">List</a></li>
+        <li class="active"><a href="#">New user</a></li>
+      </ul>
+    </nav>
+    <ul class="sidenav" id="mobile-sidenav">
+      <li><a href="index.html">List</a></li>
+      <li class="active"><a href="new.html">New user</a></li>
+    </ul>
+    <section class="form-users">
+      <div class="row">
+        <form class="col s12" id="user-form">
+          <div class="row">
+            <div class="input-field col m6 s12">
+              <input
+                placeholder="User's first name"
+                id="firstName"
+                type="text"
+                class="validate"
+              />
+              <label for="firstName">First Name</label>
+            </div>
+            <div class="input-field col m6 s12">
+              <input
+                id="lastName"
+                placeholder="User's last name"
+                type="text"
+                class="validate"
+              />
+              <label for="lastName">Last Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="password" type="password" class="validate" />
+              <label for="password">Password</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col m6 s12">
+              <select id="gender">
+                <option value="" disabled selected>Choose your Gender</option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+              </select>
+              <label>Gender</label>
+            </div>
+            <div class="input-field col m6 s12">
+              <input type="text" class="datepicker" id="birthday">
+              <label for="birthday">Birthday</label>
+            </div>
+          </div>
+          <button type="submit" class="waves-effect waves-light amber btn"><i class="material-icons left">save</i>save</button>
+        </form>
+      </div>
+    </section>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./new.js"></script>
+</html>

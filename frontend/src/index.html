@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>List users</title>
+  </head>
+  <body>
+    <nav class="nav-wrapper blue darken-4">
+      <a href="#" data-target="mobile-sidenav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <a href="#" class="brand-logo">Bryan Sanchez - Frontend</a>
+      <ul class="right hide-on-med-and-down">
+        <li class="active"><a href="#">List</a></li>
+        <li><a href="new.html">New user</a></li>
+      </ul>
+    </nav>
+    <ul class="sidenav" id="mobile-sidenav">
+      <li><a href="index.html">List</a></li>
+      <li><a href="new.html">New user</a></li>
+    </ul>
+    <section class="list-users">
+      <table class="table-users" id="table-users">
+        <caption hidden>
+          List of all active users
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">First name</th>
+            <th scope="col">Last name</th>
+            <th scope="col">Birthday</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+      </table>
+    </section>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./index.js"></script>
+</html>

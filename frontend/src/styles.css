@@ -1,0 +1,27 @@
+.nav-wrapper {
+  position: fixed;
+  padding: 0px 32px;
+}
+
+.list-users {
+  /* padding-top: 64px; */
+  padding: 64px;
+}
+
+.form-users {
+  padding: 86px 64px 0 64px;
+  /* padding-top: 86px; */
+}
+
+.datepicker-date-display,
+.datepicker-table td.is-selected {
+  background-color: #0d47a1;
+}
+
+.datepicker-cancel,
+.datepicker-clear,
+.datepicker-today,
+.datepicker-done,
+.datepicker-table td.is-today {
+  color: #0d47a1;
+}
